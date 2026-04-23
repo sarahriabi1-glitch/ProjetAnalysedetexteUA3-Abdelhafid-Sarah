@@ -27,3 +27,10 @@ Notre projet respecte les 5 principes SOLID :
 | **L** — Liskov Substitution | Chaque classe concrète peut remplacer son interface sans casser le programme |
 | **I** — Interface Segregation | Chaque interface contient une seule méthode ciblée |
 | **D** — Dependency Inversion | On dépend des interfaces, pas des classes concrètes |
+
+## Le principe de fonctionnement de notre projet : 
+Le fonctionnement de l’application suit une série d’étapes bien définies. Tout commence par la lecture du fichier texte.txt à l’aide de la méthode lire() de la classe TexteFichierReader, qui parcourt le fichier ligne par ligne et retourne une liste de chaînes de caractères. Ces lignes sont ensuite transmises à l’analyseur, où la méthode analyser() de FrequenceAnalyseur découpe le texte en mots et nettoie la ponctuation pour faciliter le traitement.
+
+Une fois cette première transformation effectuée, les mots passent par un filtre via StopwordFilter, qui supprime les mots courants comme “le”, “la”, “est” ou “de”, afin de ne garder que les termes pertinents. Les mots filtrés sont ensuite repris par FrequenceAnalyseur, qui compte le nombre d’occurrences de chaque mot, puis les trie selon leur fréquence.
+
+Les résultats obtenus sont encapsulés dans un objet AnalyseResultat, qui regroupe les informations principales comme la fréquence des mots, les mots les plus fréquents et le nombre total de mots analysés. Enfin, ces résultats sont traités par FichierResultatWriter, qui les affiche dans la console et les enregistre automatiquement dans un fichier resultats.txt.
