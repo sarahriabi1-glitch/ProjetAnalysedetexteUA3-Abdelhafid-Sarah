@@ -1,2 +1,21 @@
-# ProjetAnalysedetexteUA3-Abdelhafid-Sarah
-Programme Java d'analyse textuelle : lecture de fichiers .txt, calcul de fréquence des mots, filtrage des stopwords et export des résultats
+# $\color{red}{\text{Projet Analyse de Texte}}$
+Projet réalisé dans le cadre du cours de programmation Java orientée Science et Analyse de Données.
+
+## Description du projet
+Dans le cadre de ce projet, nous avons développé une application Java capable d’analyser un fichier texte (.txt) afin de compter la fréquence d’apparition de chaque mot. Elle permet de :
+- Lire un fichier texte
+- Filtrer les mots courants (stopwords)
+- Afficher les mots les plus fréquents
+- Exporter les résultats dans un fichier externe (`resultats.txt`)
+
+## Architecture globale
+Le projet est organisé de manière structurée afin de séparer clairement les différentes responsabilités de l’application. À la racine, on retrouve le dossier principal contenant le code source (src) ainsi que les ressources utilisées. Le point d’entrée du programme se trouve dans la classe Main.java, qui coordonne l’exécution globale.
+
+La lecture des fichiers est gérée dans le package reader, où une interface définit le comportement général et une implémentation permet de lire un fichier texte ligne par ligne. Ensuite, le traitement des mots passe par le package filter, qui contient les composants responsables du filtrage, notamment l’élimination des mots courants (stopwords).
+
+L’analyse des données est centralisée dans le package analyzer, où les mots sont comptés et triés selon leur fréquence. Les résultats obtenus sont ensuite pris en charge par le package writer, qui permet soit de les afficher, soit de les enregistrer dans un fichier.
+
+Enfin, un modèle de données simple est utilisé dans le package model pour stocker les résultats de l’analyse. À côté du code, un dossier ressources regroupe les fichiers nécessaires au fonctionnement du programme, comme le texte à analyser, la liste des mots à ignorer et le fichier de sortie généré automatiquement.
+
+## Le principe SOLID: 
+Notre projet respecte les 5 principes SOLID :
