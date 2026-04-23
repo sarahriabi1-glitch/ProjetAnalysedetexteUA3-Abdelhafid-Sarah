@@ -19,3 +19,11 @@ Enfin, un modèle de données simple est utilisé dans le package model pour sto
 
 ## Le principe SOLID: 
 Notre projet respecte les 5 principes SOLID :
+
+| Principe | Application dans le projet |
+|----------|---------------------------|
+| **S** — Single Responsibility | Chaque classe a un seul rôle (lecture, filtrage, analyse, écriture) |
+| **O** — Open/Closed | On peut ajouter de nouvelles implémentations sans modifier le code existant |
+| **L** — Liskov Substitution | Chaque classe concrète peut remplacer son interface sans casser le programme |
+| **I** — Interface Segregation | Chaque interface contient une seule méthode ciblée |
+| **D** — Dependency Inversion | On dépend des interfaces, pas des classes concrètes |
