@@ -56,10 +56,10 @@ Une fois les interfaces mises en place, nous sommes passés à l’implémentati
 - La classe Main : relie toutes les classes ensemble et lance le programme en suivant trois étapes simples : lire, analyser, écrire.
 
 ## Instructions d'exécution
-1.Télécharger le projet depuis GitHub sur votre ordinateur en copiant le lien du repository.
-2. Ouvrir le projet dans IntelliJ IDEA
-3. Lancer `Main.java` → clic droit → Run 'Main'
-4. Consulter les résultats :
+- 1 . Télécharger le projet depuis GitHub sur votre ordinateur en copiant le lien du repository.
+- 2 . Ouvrir le projet dans IntelliJ IDEA
+- 3 . Lancer `Main.java` → clic droit → Run 'Main'
+- 4 . Consulter les résultats :
    - Dans la **console** IntelliJ
    - Dans le fichier **`ressources/resultats.txt`** généré automatiquement
    
