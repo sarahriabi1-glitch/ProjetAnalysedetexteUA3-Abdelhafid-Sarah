@@ -1,0 +1,14 @@
+RÉSULTATS DE L'ANALYSE
+Total de mots : 20
+------------------------------
+Mots les plus fréquents :
+1. java → 5 fois
+2. programmation → 3 fois
+3. populaire → 2 fois
+4. langage → 2 fois
+5. puissant → 1 fois
+6. développer → 1 fois
+7. aiment → 1 fois
+8. orienté → 1 fois
+9. utilisé → 1 fois
+10. développeurs → 1 fois

@@ -1,0 +1,5 @@
+Java est un langage de programmation populaire.
+Java est utilisé pour développer des applications.
+La programmation en Java est très populaire.
+Les développeurs aiment Java et la programmation.
+Java est un langage orienté objet très puissant.
