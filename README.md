@@ -34,3 +34,10 @@ Le fonctionnement de l’application suit une série d’étapes bien définies.
 Une fois cette première transformation effectuée, les mots passent par un filtre via StopwordFilter, qui supprime les mots courants comme “le”, “la”, “est” ou “de”, afin de ne garder que les termes pertinents. Les mots filtrés sont ensuite repris par FrequenceAnalyseur, qui compte le nombre d’occurrences de chaque mot, puis les trie selon leur fréquence.
 
 Les résultats obtenus sont encapsulés dans un objet AnalyseResultat, qui regroupe les informations principales comme la fréquence des mots, les mots les plus fréquents et le nombre total de mots analysés. Enfin, ces résultats sont traités par FichierResultatWriter, qui les affiche dans la console et les enregistre automatiquement dans un fichier resultats.txt.
+
+## Le processus d'implementation :
+Une fois l'architecture globale de notre projet valider. On a  passer à l'analyse des fonctionnalités demandées dans le sujet, nous avons alors identifié 4 actions distinctes et indépendantes comme suit : lire un fichier en format texte, filtrer les mots, analyser les fréquences et enregistrer les résultats. 
+
+Puisque chaque action a un rôle différent et peut évoluer séparément, nous nous etions mis d'accord sur le fait de créer une interface par action, sans trop charger ni compliquer l'architecture de notre application. 
+
+Ce choix respecte les principes S et I de SOLID — chaque interface a une seule responsabilité et une seule méthode. Il nous offre aussi la flexibilité d'ajouter de nouvelles implémentations dans le futur sans avoir besoin de toucher au code déjà existant, ce qui correspond au principe O.
