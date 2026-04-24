@@ -1,8 +1,3 @@
 ## Ce que j'ai mis en place: 
-J'ai créé une interface TexteAnalyseur pour définir comment on traite le texte. Mon implémentation FrequenceAnalyseur nettoie 
-le texte, compte les mots et les trie du plus fréquent au moins fréquent.
-filtre - Pour éviter que des mots comme "le" ou "de" ne polluent nos résultats, j'ai implementer le StopwordFilter 
-j'ai développé FichierResultatWriter qui fait l affichage de 10 les plus frequents , et sauvegarde le fichier 
-Ainsi on a ajouter un fichier ressources pour contenant un qui contient les stops words a eleminer et le fichier texte pour
-tester notre programme 
+J'ai implémenté l'interface TexteAnalyseur ainsi que la classe FrequenceAnalyseur qui nettoie le texte, compte les occurrences de chaque mot et les trie du plus fréquent au moins fréquent. Pour éviter que des mots courants comme "le" ou "de" ne faussent les résultats, j'ai également développé StopwordFilter qui filtre ces mots avant l'analyse. J'ai aussi créé FichierResultatWriter qui affiche le top 10 des mots les plus fréquents dans la console et sauvegarde les résultats dans un fichier resultats.txt. Enfin, j'ai ajouté le dossier ressources contenant stopwords.txt et texte.txt pour tester le programme.
 
