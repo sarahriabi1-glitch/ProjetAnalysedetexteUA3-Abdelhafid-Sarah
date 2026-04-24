@@ -1,6 +1,10 @@
 # $\color{red}{\text{Projet Analyse de Texte}}$
 Projet réalisé dans le cadre du cours de programmation Java orientée Science et Analyse de Données.
 
+## Membres du groupe
+Abdelhafid Al Ahian
+Sarah Riabi
+
 ## Description du projet
 Dans le cadre de ce projet, nous avons développé une application Java capable d’analyser un fichier texte (.txt) afin de compter la fréquence d’apparition de chaque mot. Elle permet de :
 - Lire un fichier texte
