@@ -1,3 +1,3 @@
-**Sarah** : Elaboration de l'architecture, création des interfaces de structure, logique de nettoyage du texte, filtrage et gestion de l'écriture des fichiers. + preparer les ressources (les steps words et le fichier texte)
+- Sarah : Elaboration de l'architecture, création des interfaces de structure, logique de nettoyage du texte, filtrage et gestion de l'écriture des fichiers. + preparer les ressources (les steps words et le fichier texte)
 
-**Abdelhafid** : Elaboration de l'architecture, Fichier d'execution du programme (classe Main), lecture du fichier texte (package reader) et structure de stockage des données (classe AnalyseResultat)
+- Abdelhafid : Elaboration de l'architecture, Fichier d'execution du programme (classe Main), lecture du fichier texte (package reader) et structure de stockage des données (classe AnalyseResultat)
