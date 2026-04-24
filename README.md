@@ -9,7 +9,7 @@ Dans le cadre de ce projet, nous avons développé une application Java capable 
 - Exporter les résultats dans un fichier externe (`resultats.txt`)
 
 ## Architecture globale
-Le projet est organisé de manière structurée afin de séparer clairement les différentes responsabilités de l’application. À la racine, on retrouve le dossier principal contenant le code source (src) ainsi que les ressources utilisées. Le point d’entrée du programme se trouve dans la classe Main.java, qui coordonne l’exécution globale.
+Le projet est organisé de manière structurée afin de séparer clairement les différentes responsabilités de l’application. À la racine, on retrouve le dossier principal contenant le code source ainsi que les ressources utilisées. Le point d’entrée du programme se trouve dans la classe Main.java, qui coordonne l’exécution globale.
 
 La lecture des fichiers est gérée dans le package reader, où une interface définit le comportement général et une implémentation permet de lire un fichier texte ligne par ligne. Ensuite, le traitement des mots passe par le package filter, qui contient les composants responsables du filtrage, notamment l’élimination des mots courants (stopwords).
 
