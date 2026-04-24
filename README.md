@@ -36,8 +36,23 @@ Une fois cette première transformation effectuée, les mots passent par un filt
 Les résultats obtenus sont encapsulés dans un objet AnalyseResultat, qui regroupe les informations principales comme la fréquence des mots, les mots les plus fréquents et le nombre total de mots analysés. Enfin, ces résultats sont traités par FichierResultatWriter, qui les affiche dans la console et les enregistre automatiquement dans un fichier resultats.txt.
 
 ## Le processus d'implementation :
+### Creation des interfaces:
 Une fois l'architecture globale de notre projet valider. On a  passer à l'analyse des fonctionnalités demandées dans le sujet, nous avons alors identifié 4 actions distinctes et indépendantes comme suit : lire un fichier en format texte, filtrer les mots, analyser les fréquences et enregistrer les résultats. 
 
 Puisque chaque action a un rôle différent et peut évoluer séparément, nous nous etions mis d'accord sur le fait de créer une interface par action, sans trop charger ni compliquer l'architecture de notre application. 
 
 Ce choix respecte les principes S et I de SOLID — chaque interface a une seule responsabilité et une seule méthode. Il nous offre aussi la flexibilité d'ajouter de nouvelles implémentations dans le futur sans avoir besoin de toucher au code déjà existant, ce qui correspond au principe O.
+### Creation des classes: 
+Une fois les interfaces mises en place, nous sommes passés à l’implémentation des classes concrètes.
+- La classe TexteFichierReader : lit le fichier texte ligne par ligne pour récupérer son contenu.
+- La classe StopwordFilter : charge une liste de mots à ignorer depuis un fichier et les garde en mémoire pour les exclure facilement lors de l’analyse.
+- La classe FrequenceAnalyseur : traite le texte en le découpant en mots, enlève la ponctuation et compte combien de fois chaque mot apparaît.
+- La classe FichierResultatWriter : affiche les résultats à l’écran et les enregistre dans un fichier pour les garder.
+- La classe AnalyseResultat : sert à stocker les résultats de l’analyse et à les transporter entre les différentes étapes sans les modifier.
+- La classe Main : relie toutes les classes ensemble et lance le programme en suivant trois étapes simples : lire, analyser, écrire.
+
+
+## Conclusion: 
+Ce projet nous a permis de mettre en pratique les principes fondamentaux de la programmation orientée objet en Java, notamment à travers l'application des principes SOLID. En développant une application d'analyse de texte structurée et modulaire, nous avons appris à séparer les responsabilités, à coder contre des abstractions et à organiser un projet de manière professionnelle.
+Au-delà des aspects techniques, ce projet nous a également sensibilisés à l'importance de la phase de conception avant le codage. Définir l'architecture et les interfaces en premier nous a permis de travailler de façon méthodique et d'éviter les erreurs de conception difficiles à corriger par la suite.
+Enfin, la gestion du projet via GitHub nous a initiés aux bonnes pratiques de collaboration en équipe, notamment la répartition claire des tâches et le suivi des contributions. L'ensemble de ces apprentissages constitue une base solide pour nos futurs projets de développement Java.
