@@ -1,1 +1,1 @@
-
+Sarah : création des interfaces de structure, logique de nettoyage du texte, filtrage et gestion de l'écriture des fichiers. + preparer les ressources (les steps words et le fichier texte)
